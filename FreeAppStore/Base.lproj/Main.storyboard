@@ -111,7 +111,7 @@
                                 <rect key="frame" x="8" y="8" width="359" height="651"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-Ke-zvN" userLabel="Title View">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="131"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LcU-w8-mRt" userLabel="Icon">
                                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
@@ -151,23 +151,36 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-9n-SQf" userLabel="Detail/Review">
+                                                <rect key="frame" x="79.5" y="100" width="200" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="HgQ-YX-wCj"/>
+                                                    <constraint firstAttribute="width" constant="200" id="dIX-6h-ZYs"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="세부사항"/>
+                                                    <segment title="리뷰"/>
+                                                </segments>
+                                            </segmentedControl>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="xhE-vv-O3e" firstAttribute="top" secondItem="LcU-w8-mRt" secondAttribute="top" id="0FJ-hN-Ab5"/>
                                             <constraint firstItem="iwl-tm-hjw" firstAttribute="top" secondItem="xhE-vv-O3e" secondAttribute="bottom" constant="4" id="Br0-ef-tfN"/>
                                             <constraint firstItem="pZE-Qe-E66" firstAttribute="bottom" secondItem="LcU-w8-mRt" secondAttribute="bottom" id="CcK-Jw-GpF"/>
-                                            <constraint firstAttribute="height" constant="100" id="Ool-Ua-bk5"/>
+                                            <constraint firstAttribute="height" constant="131" id="Ool-Ua-bk5"/>
                                             <constraint firstItem="pZE-Qe-E66" firstAttribute="leading" secondItem="LcU-w8-mRt" secondAttribute="trailing" constant="8" id="PbX-v2-HA7"/>
                                             <constraint firstAttribute="trailing" secondItem="xhE-vv-O3e" secondAttribute="trailing" constant="8" id="U0r-gE-p06"/>
                                             <constraint firstItem="xhE-vv-O3e" firstAttribute="leading" secondItem="LcU-w8-mRt" secondAttribute="trailing" constant="8" id="VWb-X1-Dp7"/>
-                                            <constraint firstAttribute="bottom" secondItem="LcU-w8-mRt" secondAttribute="bottom" constant="10" id="YNH-rU-Zgf"/>
                                             <constraint firstItem="iwl-tm-hjw" firstAttribute="leading" secondItem="LcU-w8-mRt" secondAttribute="trailing" constant="8" id="aYG-Mx-zuP"/>
                                             <constraint firstItem="LcU-w8-mRt" firstAttribute="top" secondItem="Xaa-Ke-zvN" secondAttribute="top" constant="10" id="cqM-Bz-vrU"/>
+                                            <constraint firstAttribute="bottom" secondItem="0nc-9n-SQf" secondAttribute="bottom" constant="10" id="hWS-W9-73J"/>
+                                            <constraint firstItem="0nc-9n-SQf" firstAttribute="top" secondItem="pZE-Qe-E66" secondAttribute="bottom" constant="10" id="hex-IR-Dzm"/>
                                             <constraint firstItem="LcU-w8-mRt" firstAttribute="leading" secondItem="Xaa-Ke-zvN" secondAttribute="leading" constant="8" id="jZy-p6-s1t"/>
+                                            <constraint firstItem="0nc-9n-SQf" firstAttribute="centerX" secondItem="Xaa-Ke-zvN" secondAttribute="centerX" id="kQr-Vb-Eeo"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycn-WA-JFU" userLabel="ScreenShot View">
-                                        <rect key="frame" x="0.0" y="100" width="359" height="380"/>
+                                        <rect key="frame" x="0.0" y="131" width="359" height="380"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAx-3L-jv6" userLabel="ScreenShot Title">
                                                 <rect key="frame" x="8" y="8" width="47" height="18"/>
@@ -176,7 +189,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HTT-h4-HD2" userLabel="ScreenShot Collection View">
-                                                <rect key="frame" x="8" y="34" width="343" height="330"/>
+                                                <rect key="frame" x="8" y="30" width="343" height="334"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EDm-vj-q6B">
                                                     <size key="itemSize" width="189" height="303"/>
@@ -186,7 +199,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenShotCollectionViewCell" id="wqY-t2-W6t" userLabel="ScreenShot View Cell" customClass="ScreenShotCollectionViewCell" customModule="FreeAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="13.5" width="189" height="303"/>
+                                                        <rect key="frame" x="0.0" y="15.5" width="189" height="303"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                             <rect key="frame" x="0.0" y="0.0" width="189" height="303"/>
@@ -217,12 +230,12 @@
                                             <constraint firstAttribute="height" constant="380" id="Aah-mn-2ti"/>
                                             <constraint firstItem="DAx-3L-jv6" firstAttribute="top" secondItem="ycn-WA-JFU" secondAttribute="top" constant="8" id="Z6X-5Z-J9e"/>
                                             <constraint firstAttribute="bottom" secondItem="HTT-h4-HD2" secondAttribute="bottom" constant="16" id="gAo-sO-m6o"/>
-                                            <constraint firstItem="HTT-h4-HD2" firstAttribute="top" secondItem="DAx-3L-jv6" secondAttribute="bottom" constant="8" id="j55-9y-XRZ"/>
+                                            <constraint firstItem="HTT-h4-HD2" firstAttribute="top" secondItem="DAx-3L-jv6" secondAttribute="bottom" constant="4" id="j55-9y-XRZ"/>
                                             <constraint firstAttribute="trailing" secondItem="HTT-h4-HD2" secondAttribute="trailing" constant="8" id="kxM-KV-4Ro"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-iu-PKa" userLabel="Description View">
-                                        <rect key="frame" x="0.0" y="480" width="359" height="120"/>
+                                        <rect key="frame" x="0.0" y="511" width="359" height="120"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKx-xJ-ajU" userLabel="Title">
                                                 <rect key="frame" x="8" y="8" width="26" height="18"/>
@@ -262,7 +275,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEZ-cE-qqx" userLabel="Info View">
-                                        <rect key="frame" x="0.0" y="600" width="359" height="130"/>
+                                        <rect key="frame" x="0.0" y="631" width="359" height="130"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkr-rf-pfi" userLabel="Title">
                                                 <rect key="frame" x="8" y="8" width="26" height="18"/>
