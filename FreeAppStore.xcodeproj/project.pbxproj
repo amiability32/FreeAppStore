@@ -26,6 +26,7 @@
 		3AC98B561ED437BE0017D84A /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B521ED437BE0017D84A /* AppListModel.swift */; };
 		3AC98B5A1ED437D40017D84A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B591ED437D40017D84A /* Notifications.swift */; };
 		3AC98B5E1ED437E80017D84A /* UIImageView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B5D1ED437E80017D84A /* UIImageView+Theme.swift */; };
+		3AC98B601ED476150017D84A /* DetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */; };
 		9351CBB744DC1D03D09D5B70 /* Pods_FreeAppStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFEBB4994E74BFF1CFEFB3A /* Pods_FreeAppStoreTests.framework */; };
 		F35E2EF158331749266485ED /* Pods_FreeAppStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DA14D803979E5C8986827 /* Pods_FreeAppStoreUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		3AC98B521ED437BE0017D84A /* AppListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppListModel.swift; path = Model/AppListModel.swift; sourceTree = "<group>"; };
 		3AC98B591ED437D40017D84A /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Constant/Notifications.swift; sourceTree = "<group>"; };
 		3AC98B5D1ED437E80017D84A /* UIImageView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Theme.swift"; path = "Extenstion/UIImageView+Theme.swift"; sourceTree = "<group>"; };
+		3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailContainerViewController.swift; path = View/DetailContainerViewController.swift; sourceTree = "<group>"; };
 		4C8DA14D803979E5C8986827 /* Pods_FreeAppStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeAppStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658D706E91C1DD3AA67E90F0 /* Pods-FreeAppStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStoreUITests/Pods-FreeAppStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		681E9C61629E077382C21115 /* Pods-FreeAppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStore/Pods-FreeAppStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				3AC98B421ED437A60017D84A /* AppListCell.swift */,
 				3AC98B431ED437A60017D84A /* AppListViewController.swift */,
 				3AC98B441ED437A60017D84A /* ScreenShotCollectionViewCell.swift */,
+				3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				3AC98B461ED437A60017D84A /* AppListCell.swift in Sources */,
 				3AC98B481ED437A60017D84A /* ScreenShotCollectionViewCell.swift in Sources */,
 				3AC98B471ED437A60017D84A /* AppListViewController.swift in Sources */,
+				3AC98B601ED476150017D84A /* DetailContainerViewController.swift in Sources */,
 				3AC98B451ED437A60017D84A /* AppDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -776,6 +780,7 @@
 				3AC98B2E1ED41F810017D84A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC98B2F1ED41F810017D84A /* Build configuration list for PBXNativeTarget "FreeAppStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +789,7 @@
 				3AC98B311ED41F810017D84A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC98B321ED41F810017D84A /* Build configuration list for PBXNativeTarget "FreeAppStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -792,6 +798,7 @@
 				3AC98B341ED41F810017D84A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
