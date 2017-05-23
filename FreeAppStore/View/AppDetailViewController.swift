@@ -15,12 +15,29 @@ class AppDetailViewController: UIViewController {
     var viewModel: AppDetailViewModel?
     
     var detailContainverViewController: DetailContainerViewController?
+    var reviewContainerViewController: ReviewContainerViewController?
     
     @IBOutlet var iconImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var artistNameLabel: UILabel!
     @IBOutlet var starRatingView: CosmosView!
+    
+    @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var detailContainerView: UIView!
+    @IBOutlet var reviewContainerView: UIView!
+    
+    @IBAction func indexChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            detailContainerView.isHidden = false
+            reviewContainerView.isHidden = true
+        case 1:
+            detailContainerView.isHidden = true
+            reviewContainerView.isHidden = false
+        default:
+            break;
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +46,9 @@ class AppDetailViewController: UIViewController {
             viewModel = AppDetailViewModel(appId: appId)
             viewModel?.delegate = self
         }
-
+        
+        detailContainerView.isHidden = false
+        reviewContainerView.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +56,8 @@ class AppDetailViewController: UIViewController {
             detailContainverViewController = segue.destination as? DetailContainerViewController
             detailContainverViewController?.appId = self.appId
         } else if (segue.identifier == "reviewView") {
-            
+            reviewContainerViewController = segue.destination as? ReviewContainerViewController
+            reviewContainerViewController?.appId = self.appId
         }
     }
 }

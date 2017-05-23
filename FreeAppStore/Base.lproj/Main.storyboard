@@ -158,6 +158,9 @@
                                             <segment title="세부사항"/>
                                             <segment title="리뷰"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="indexChanged:" destination="sni-bM-Xux" eventType="valueChanged" id="f8l-9n-lbx"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
@@ -176,10 +179,16 @@
                                     <constraint firstItem="0nc-9n-SQf" firstAttribute="centerX" secondItem="Xaa-Ke-zvN" secondAttribute="centerX" id="kQr-Vb-Eeo"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LM-Tx-nbc" userLabel="Detail Containver View">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LM-Tx-nbc" userLabel="Detail Container View">
                                 <rect key="frame" x="16" y="195" width="343" height="472"/>
                                 <connections>
                                     <segue destination="xXu-pl-Ug7" kind="embed" identifier="detailView" id="wz2-dN-1Cy"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iI-JP-NOK" userLabel="Review Container View">
+                                <rect key="frame" x="16" y="195" width="343" height="472"/>
+                                <connections>
+                                    <segue destination="ve2-XE-nwB" kind="embed" identifier="reviewView" id="tG6-hM-vpQ"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -187,10 +196,14 @@
                         <constraints>
                             <constraint firstItem="0LM-Tx-nbc" firstAttribute="top" secondItem="Xaa-Ke-zvN" secondAttribute="bottom" id="1UM-DJ-WS1"/>
                             <constraint firstItem="0LM-Tx-nbc" firstAttribute="bottom" secondItem="Jgf-1Q-vRn" secondAttribute="bottomMargin" id="EQZ-6t-7Up"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2iI-JP-NOK" secondAttribute="trailing" id="GEq-JG-9B8"/>
                             <constraint firstItem="Xaa-Ke-zvN" firstAttribute="leading" secondItem="Jgf-1Q-vRn" secondAttribute="leadingMargin" id="JvE-lN-mSl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2iI-JP-NOK" secondAttribute="bottom" id="MzL-af-FWb"/>
                             <constraint firstItem="Xaa-Ke-zvN" firstAttribute="top" secondItem="zWW-Cb-KwZ" secondAttribute="bottom" id="ecL-YM-6n4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0LM-Tx-nbc" secondAttribute="trailing" id="igu-TG-UVR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xaa-Ke-zvN" secondAttribute="trailing" id="jzn-ea-tbd"/>
+                            <constraint firstItem="2iI-JP-NOK" firstAttribute="leading" secondItem="Jgf-1Q-vRn" secondAttribute="leadingMargin" id="miN-fx-aut"/>
+                            <constraint firstItem="2iI-JP-NOK" firstAttribute="top" secondItem="Xaa-Ke-zvN" secondAttribute="bottom" id="pFO-qd-0IX"/>
                             <constraint firstItem="0LM-Tx-nbc" firstAttribute="leading" secondItem="Jgf-1Q-vRn" secondAttribute="leadingMargin" id="wZP-Fe-1GQ"/>
                         </constraints>
                     </view>
@@ -199,17 +212,23 @@
                         <outlet property="detailContainerView" destination="0LM-Tx-nbc" id="M7h-eu-t4M"/>
                         <outlet property="iconImageView" destination="LcU-w8-mRt" id="9yU-yC-eHe"/>
                         <outlet property="nameLabel" destination="xhE-vv-O3e" id="OBB-jU-fhw"/>
+                        <outlet property="reviewContainerView" destination="2iI-JP-NOK" id="XjT-Wu-fJX"/>
+                        <outlet property="segmentedControl" destination="0nc-9n-SQf" id="DwO-Gv-MWs"/>
                         <outlet property="starRatingView" destination="pZE-Qe-E66" id="z89-Rs-OcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jo-EL-72t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="198"/>
+            <point key="canvasLocation" x="1541.5999999999999" y="197.45127436281859"/>
         </scene>
         <!--Detail Container View Controller-->
         <scene sceneID="d6g-AY-9iN">
             <objects>
                 <viewController id="xXu-pl-Ug7" customClass="DetailContainerViewController" customModule="FreeAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lKN-Ho-EHi"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0m-1A-Xbz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WEy-R6-iWo">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="472"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,6 +437,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkC-dQ-25C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2391" y="60"/>
+        </scene>
+        <!--Review Container View Controller-->
+        <scene sceneID="BTk-Hy-ie0">
+            <objects>
+                <viewController id="ve2-XE-nwB" customClass="ReviewContainerViewController" customModule="FreeAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="scw-nm-670">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="472"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFs-T2-UQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="533"/>
         </scene>
     </scenes>
 </document>
