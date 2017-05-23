@@ -1,8 +1,8 @@
 //
 //  ScreenShotCollectionViewCell.swift
-//  FinanceAppStore
+//  FreeAppStore
 //
-//  Created by sally on 2017. 4. 14..
+//  Created by sally on 2017. 5. 23..
 //  Copyright © 2017년 sally. All rights reserved.
 //
 

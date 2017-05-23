@@ -1,8 +1,8 @@
 //
 //  AppDetailVO.swift
-//  FinanceAppStore
+//  FreeAppStore
 //
-//  Created by sally on 2017. 4. 13..
+//  Created by sally on 2017. 5. 22..
 //  Copyright © 2017년 sally. All rights reserved.
 //
 
