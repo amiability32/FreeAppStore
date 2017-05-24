@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C8411BE9700C17299DFAF2A /* Pods_FreeAppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5AD208B0C748F0DB6C6A1 /* Pods_FreeAppStore.framework */; };
 		3A4F23111ED570D900B119F7 /* ReviewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F23101ED570D900B119F7 /* ReviewListViewModel.swift */; };
+		3A4F23131ED572EB00B119F7 /* ReviewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F23121ED572EB00B119F7 /* ReviewListCell.swift */; };
 		3AC98B081ED41F810017D84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B071ED41F810017D84A /* AppDelegate.swift */; };
 		3AC98B0D1ED41F810017D84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC98B0B1ED41F810017D84A /* Main.storyboard */; };
 		3AC98B0F1ED41F810017D84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC98B0E1ED41F810017D84A /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		05DA12F1E6D98038FB1EEEFB /* Pods-FreeAppStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStoreTests/Pods-FreeAppStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		1AF5AD208B0C748F0DB6C6A1 /* Pods_FreeAppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeAppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4F23101ED570D900B119F7 /* ReviewListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewListViewModel.swift; sourceTree = "<group>"; };
+		3A4F23121ED572EB00B119F7 /* ReviewListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewListCell.swift; path = View/ReviewListCell.swift; sourceTree = "<group>"; };
 		3AC98B041ED41F810017D84A /* FreeAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC98B071ED41F810017D84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC98B0C1ED41F810017D84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */,
 				3AC98B441ED437A60017D84A /* ScreenShotCollectionViewCell.swift */,
 				3AC98B611ED47E4C0017D84A /* ReviewContainerViewController.swift */,
+				3A4F23121ED572EB00B119F7 /* ReviewListCell.swift */,
 				3AC98B431ED437A60017D84A /* AppListViewController.swift */,
 				3AC98B421ED437A60017D84A /* AppListCell.swift */,
 			);
@@ -534,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC98B541ED437BE0017D84A /* AppDetailModel.swift in Sources */,
+				3A4F23131ED572EB00B119F7 /* ReviewListCell.swift in Sources */,
 				3AC98B531ED437BE0017D84A /* AppDetail.swift in Sources */,
 				3AC98B621ED47E4C0017D84A /* ReviewContainerViewController.swift in Sources */,
 				3AC98B4D1ED437B40017D84A /* AppListViewModel.swift in Sources */,

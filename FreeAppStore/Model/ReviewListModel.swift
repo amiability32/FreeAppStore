@@ -20,7 +20,6 @@ class ReviewListModel {
     
     init(appId: String) {
         REVIEW_URL = REVIEW_URL.replacingOccurrences(of: "APP_ID", with: appId)
-        print("url" + REVIEW_URL)
     }
     
     func load() {
@@ -30,9 +29,11 @@ class ReviewListModel {
             let json = JSON(responseValue)
             let entryArray = json[JsonNames.FEED][JsonNames.ENTRY].arrayValue
             
-            for i in 1..<entryArray.count {
-                let review = Review(entryArray[i])
-                self.reviewList.append(review)
+            if (entryArray.count > 1) {
+                for i in 1..<entryArray.count {
+                    let review = Review(entryArray[i])
+                    self.reviewList.append(review)
+                }
             }
             
             NotificationCenter.default.post(name: Notification.Name(rawValue: Notifications.ReviewListDidChange), object: self)
