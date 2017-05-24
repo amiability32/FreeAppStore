@@ -29,7 +29,6 @@ class ReviewContainerViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let viewModel = viewModel else { return 0 }
         
-        print(viewModel.reviewList.count)
         return viewModel.reviewList.count
     }
     

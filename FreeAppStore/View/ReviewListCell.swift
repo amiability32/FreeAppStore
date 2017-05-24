@@ -12,13 +12,15 @@ import Cosmos
 class ReviewListCell: UITableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var versionLabel: UILabel!
     @IBOutlet var starRatingView: CosmosView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var contentLabel: UILabel!
     
     func load(review: Review) {
         titleLabel.text = review.title
-        versionLabel.text = review.version
         starRatingView.rating = review.rating
+        nameLabel.text = review.name
+        contentLabel.text = review.content
     }
 
 }
