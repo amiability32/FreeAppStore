@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C8411BE9700C17299DFAF2A /* Pods_FreeAppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5AD208B0C748F0DB6C6A1 /* Pods_FreeAppStore.framework */; };
+		3A4F23111ED570D900B119F7 /* ReviewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F23101ED570D900B119F7 /* ReviewListViewModel.swift */; };
 		3AC98B081ED41F810017D84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B071ED41F810017D84A /* AppDelegate.swift */; };
 		3AC98B0D1ED41F810017D84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC98B0B1ED41F810017D84A /* Main.storyboard */; };
 		3AC98B0F1ED41F810017D84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC98B0E1ED41F810017D84A /* Assets.xcassets */; };
@@ -28,6 +29,8 @@
 		3AC98B5E1ED437E80017D84A /* UIImageView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B5D1ED437E80017D84A /* UIImageView+Theme.swift */; };
 		3AC98B601ED476150017D84A /* DetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */; };
 		3AC98B621ED47E4C0017D84A /* ReviewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B611ED47E4C0017D84A /* ReviewContainerViewController.swift */; };
+		3AC98B641ED56C070017D84A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B631ED56C070017D84A /* Review.swift */; };
+		3AC98B661ED56EAA0017D84A /* ReviewListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC98B651ED56EAA0017D84A /* ReviewListModel.swift */; };
 		9351CBB744DC1D03D09D5B70 /* Pods_FreeAppStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFEBB4994E74BFF1CFEFB3A /* Pods_FreeAppStoreTests.framework */; };
 		F35E2EF158331749266485ED /* Pods_FreeAppStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DA14D803979E5C8986827 /* Pods_FreeAppStoreUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,7 @@
 /* Begin PBXFileReference section */
 		05DA12F1E6D98038FB1EEEFB /* Pods-FreeAppStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStoreTests/Pods-FreeAppStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		1AF5AD208B0C748F0DB6C6A1 /* Pods_FreeAppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeAppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4F23101ED570D900B119F7 /* ReviewListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewListViewModel.swift; sourceTree = "<group>"; };
 		3AC98B041ED41F810017D84A /* FreeAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC98B071ED41F810017D84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC98B0C1ED41F810017D84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		3AC98B5D1ED437E80017D84A /* UIImageView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Theme.swift"; path = "Extenstion/UIImageView+Theme.swift"; sourceTree = "<group>"; };
 		3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailContainerViewController.swift; path = View/DetailContainerViewController.swift; sourceTree = "<group>"; };
 		3AC98B611ED47E4C0017D84A /* ReviewContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewContainerViewController.swift; path = View/ReviewContainerViewController.swift; sourceTree = "<group>"; };
+		3AC98B631ED56C070017D84A /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Review.swift; path = Model/Review.swift; sourceTree = "<group>"; };
+		3AC98B651ED56EAA0017D84A /* ReviewListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewListModel.swift; path = Model/ReviewListModel.swift; sourceTree = "<group>"; };
 		4C8DA14D803979E5C8986827 /* Pods_FreeAppStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeAppStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658D706E91C1DD3AA67E90F0 /* Pods-FreeAppStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStoreUITests/Pods-FreeAppStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		681E9C61629E077382C21115 /* Pods-FreeAppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeAppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeAppStore/Pods-FreeAppStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,11 +191,11 @@
 			children = (
 				3AC98B0B1ED41F810017D84A /* Main.storyboard */,
 				3AC98B411ED437A60017D84A /* AppDetailViewController.swift */,
-				3AC98B421ED437A60017D84A /* AppListCell.swift */,
-				3AC98B431ED437A60017D84A /* AppListViewController.swift */,
-				3AC98B441ED437A60017D84A /* ScreenShotCollectionViewCell.swift */,
 				3AC98B5F1ED476150017D84A /* DetailContainerViewController.swift */,
+				3AC98B441ED437A60017D84A /* ScreenShotCollectionViewCell.swift */,
 				3AC98B611ED47E4C0017D84A /* ReviewContainerViewController.swift */,
+				3AC98B431ED437A60017D84A /* AppListViewController.swift */,
+				3AC98B421ED437A60017D84A /* AppListCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			children = (
 				3AC98B491ED437B40017D84A /* AppDetailViewModel.swift */,
 				3AC98B4A1ED437B40017D84A /* AppListViewModel.swift */,
+				3A4F23101ED570D900B119F7 /* ReviewListViewModel.swift */,
 				3AC98B4B1ED437B40017D84A /* ViewModelDelegate.swift */,
 			);
 			name = "View Model";
@@ -211,6 +218,8 @@
 				3AC98B501ED437BE0017D84A /* AppDetailModel.swift */,
 				3AC98B511ED437BE0017D84A /* AppInfo.swift */,
 				3AC98B521ED437BE0017D84A /* AppListModel.swift */,
+				3AC98B631ED56C070017D84A /* Review.swift */,
+				3AC98B651ED56EAA0017D84A /* ReviewListModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -537,9 +546,12 @@
 				3AC98B4C1ED437B40017D84A /* AppDetailViewModel.swift in Sources */,
 				3AC98B461ED437A60017D84A /* AppListCell.swift in Sources */,
 				3AC98B481ED437A60017D84A /* ScreenShotCollectionViewCell.swift in Sources */,
+				3AC98B641ED56C070017D84A /* Review.swift in Sources */,
 				3AC98B471ED437A60017D84A /* AppListViewController.swift in Sources */,
 				3AC98B601ED476150017D84A /* DetailContainerViewController.swift in Sources */,
 				3AC98B451ED437A60017D84A /* AppDetailViewController.swift in Sources */,
+				3AC98B661ED56EAA0017D84A /* ReviewListModel.swift in Sources */,
+				3A4F23111ED570D900B119F7 /* ReviewListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

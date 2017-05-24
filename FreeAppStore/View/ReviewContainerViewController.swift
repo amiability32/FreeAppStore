@@ -11,28 +11,21 @@ import UIKit
 class ReviewContainerViewController: UIViewController {
     
     var appId: String?
-    var viewModel: AppDetailViewModel?
+    var viewModel: ReviewListViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let appId = appId {
+            viewModel = ReviewListViewModel(appId: appId)
+            viewModel?.delegate = self
+        }
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+extension ReviewContainerViewController: ViewModelDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func reloadView() {
+        print("reload")
     }
-    */
-
 }

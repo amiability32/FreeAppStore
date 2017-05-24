@@ -9,4 +9,5 @@
 struct Notifications {
     static let AppListDidChange = "AppListDidChange"
     static let AppDetailDidChange = "AppDetailDidChange"
+    static let ReviewListDidChange = "ReviewListDidChange"
 }

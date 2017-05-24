@@ -16,7 +16,6 @@ fileprivate struct JsonNames {
 
 class AppListModel {
     private let APP_LIST_URL = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=50/json"
-    
     public private(set) var appList = [AppInfo]()
     
     func load() {
@@ -24,8 +23,7 @@ class AppListModel {
             guard let responseValue = response.result.value else { return }
             
             let json = JSON(responseValue)
-            let feed = json[JsonNames.FEED]
-            let entryArray = feed[JsonNames.ENTRY].arrayValue
+            let entryArray = json[JsonNames.FEED][JsonNames.ENTRY].arrayValue
             
             for entry in entryArray {
                 let appInfo = AppInfo(entry)
