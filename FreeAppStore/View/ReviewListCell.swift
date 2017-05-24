@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import Cosmos
 
 class ReviewListCell: UITableViewCell {
 
-    func load(id: Int, _ review: Review) {
-        //set
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var versionLabel: UILabel!
+    @IBOutlet var starRatingView: CosmosView!
+    
+    func load(review: Review) {
+        titleLabel.text = review.title
+        versionLabel.text = review.version
+        starRatingView.rating = review.rating
     }
 
 }

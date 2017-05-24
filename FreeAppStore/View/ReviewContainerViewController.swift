@@ -27,22 +27,17 @@ class ReviewContainerViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let viewModel = viewModel else {
-            print("0")
-            return 0
-        }
+        guard let viewModel = viewModel else { return 0 }
         
         print(viewModel.reviewList.count)
         return viewModel.reviewList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let viewModel = viewModel else {
-            return UITableViewCell()
-        }
+        guard let viewModel = viewModel else { return UITableViewCell() }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewListCell", for: indexPath) as! ReviewListCell
-        cell.load(id: indexPath.row + 1, viewModel.reviewList[indexPath.row])
+        cell.load(review: viewModel.reviewList[indexPath.row])
         
         return cell
     }

@@ -21,14 +21,14 @@ fileprivate struct JsonNames {
 class Review {
 
     let name: String
-    let rating: Int
+    let rating: Double
     let title: String
     let content: String
     let version: String
     
     init(_ json: JSON) {
         name = json[JsonNames.AUTHOR][JsonNames.NAME][JsonNames.LABEL].stringValue
-        rating = json[JsonNames.RATING][JsonNames.LABEL].intValue
+        rating = json[JsonNames.RATING][JsonNames.LABEL].doubleValue
         title = json[JsonNames.TITLE][JsonNames.LABEL].stringValue
         content = json[JsonNames.CONTENT][JsonNames.LABEL].stringValue
         version = json[JsonNames.VERSION][JsonNames.LABEL].stringValue
